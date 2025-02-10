@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Details</title>
+</head>
+<body>
+	<form action="form" method="post" style=" display: flex; justify-content: center; align-content: center; background-color: #f4f4f4; border: 2px solid black; font-family: Arial, sans-serif;"  >
+		<div class="style" >
+			
+			<h2>Employee Details</h2>
+			
+			<label><strong>Employee Id :</strong> </label>
+			<input type="number" name="id" placeholder="Enter Employee ID "><br><br>
+			
+			<label><strong>Employee Name : </strong></label>
+			<input type="text"  name="name" placeholder="Enter Employee Name"><br><br>
+			
+			<label><strong>Employee Address :</strong> </label>
+			<input type="text"  name="address" placeholder="Enter Employee Address"><br><br>
+			
+			<label><strong>Employee Salary :</strong> </label>
+			<input type="number"  name="salary" placeholder="Enter Employee Salary"><br><br>
+			
+			<label><strong>Employee Gender:</strong> </label>
+			<label for="genm">Male</label>
+			<input type="radio" name="gender" id="genm" value="Male">
+
+			<label for="genf">Female</label>
+			<input type="radio" name="gender" id="genf" value="Female"><br><br>
+
+			<label><strong>Employee Profile: </strong></label>
+			<label>Developer</label>
+			<input type="radio" name="profile" value="Developer">
+
+			<label>Tester</label>
+			<input type="radio" name="profile" value="Tester">
+
+			<label>QA</label>
+			<input type="radio" name="profile" value="QA"><br><br>
+
+			<label><strong>Employee Hobbies:</strong> </label><br>
+			<label>Reading</label>
+			<input type="checkbox" name="hobbies" value="Reading">
+
+			<label>Writing</label>
+			<input type="checkbox" name="hobbies" value="Writing">
+
+			<label>Searching</label>
+			<input type="checkbox" name="hobbies" value="Searching">
+
+			<label>Coding</label>
+			<input type="checkbox" name="hobbies" value="Coding"><br><br>
+
+           	<button type="submit"  name="button" ><strong>SUBMIT</strong></button>
+		</div>
+	</form>
+</body>
+</html>
