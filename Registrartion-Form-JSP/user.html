@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #bfccd3;
+    color: #333;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #6e45e2;
+}
+
+button {
+    padding: 12px;
+    background: #D3C6BF;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #bfccd3;
+}
+
+::placeholder {
+    color: #999;
+    font-size: 13px;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+</style>
+
+</head>
+<body>
+	<div class = "container">
+		<form action="user" method="post">
+			
+			<h3><b>Registration Form</b></h3><br>
+			
+			<label>Enter User Name </label>
+			<input type="text" name="UName" placeholder="Enter User name" required>
+			
+			<label>Enter Password </label>
+			<input type="password" name="Password" placeholder="Enter Password" required><br>
+			
+			<label>Enter First Name </label>
+			<input type="text" name="FName" placeholder="Enter First name">
+			
+			<label>Enter Last Name </label>
+			<input type="text" name="LName" placeholder="Enter Last name">
+			
+			<label>Enter City </label>
+			<input type="text" name="City" placeholder="Enter City" required>
+			
+			<label>Enter State </label>
+			<input type="text" name="State" placeholder="Enter State" required>
+			
+			<label>Enter Pincode </label>
+			<input type="number" name="Pincode" placeholder="Enter Pincode" required>
+			
+			<label>Enter Mail Id </label>
+			<input type="text" name="MailId" placeholder="Enter Mail Id" required>
+			
+			<label>Enter Phone No </label>
+			<input type="number" name="PhnNo" placeholder="Enter Contact Number" required>
+			
+			<button type="submit" ><b>Register</b></button>
+			
+		</form>
+	
+	</div>
+
+</body>
+</html>
