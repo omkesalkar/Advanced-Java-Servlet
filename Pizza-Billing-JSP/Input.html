@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Domino's Pizza</title>
+
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #bfccd3;
+    color: #333;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+select:focus {
+    border-color: #6e45e2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #6e45e2;
+}
+
+button {
+    padding: 12px;
+    background: #D3C6BF;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #bfccd3;
+}
+
+::placeholder {
+    color: #999;
+    font-size: 13px;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+</style>
+
+
+</head>
+<body>
+	<div class="container">
+		<form action="user" method="post" ">
+			
+			<h2><strong>Order your Pizza Here 🍕</strong></h2><br>
+			
+			<label><strong>Name: </strong></label>
+			<input type="text" name="Name" placeholder="Enter Your Name" required><br><br>
+			
+			<label><strong>Select the Crust: </strong></label>
+			<select name="Crust">
+  				<option value="Deep Crust">Deep Crust</option>
+  				<option value="hand tossed">hand tossed</option>
+  				<option value="thin">thin</option>
+  				<option value="pan">pan</option>
+  				<option value="gluten free">gluten free</option>
+			</select><br><br>
+			
+			<label><strong>Toppings: </strong></label><br>
+			<input type="checkbox" name="Toppings" value="Peas">
+			<label>Peas</label>
+			<input type="checkbox" name="Toppings" value="Paneer">
+			<label>Paneer</label>
+			<input type="checkbox" name="Toppings" value="Red Peppers">
+			<label>Red Peppers</label>
+			<input type="checkbox" name="Toppings" value="Pineapple" >
+			<label>Pineapple</label>
+			<input type="checkbox" name="Toppings" value="Onion" >
+			<label>Onion</label>
+			<input type="checkbox" name="Toppings" value="Tomato">
+			<label>Tomato</label><br><br>
+			
+			<label><strong>Select 1 FREE Appetizer: </strong></label>
+			<input type="radio" name="Appetizer" value="Garlic Bread" >
+			<label>Garlic Bread  </label>
+			<input type="radio" name="Appetizer" value="Cheese Garlic Bread  ">
+			<label>Cheese Garlic Bread  </label>
+			<input type="radio" name="Appetizer" value="Veg Soup">
+			<label>Veg Soup  </label>
+			<input type="radio" name="Appetizer" value="Veg Sandwich">
+			<label>Veg Sandwich  </label><br><br>
+
+			<label><strong>Address: </strong></label>
+			<input type="text" name="Address" placeholder="Please Enter Your Address Here" required><br>
+			
+			<label><strong>Credit Card: </strong></label>
+			<input type="radio" name="CreditCard" value="Visa">
+			<label>Visa  </label>
+			<input type="radio" name="CreditCard" value="MasterCard" >
+			<label>MasterCard  </label>
+			<input type="radio" name="CreditCard" value="American Express">
+			<label>American Express  </label><br><br>
+			
+			
+			<label><strong>Credit Card Number: </strong></label>
+			<input type="password" name="Password" required><br>
+			<label><strong>Re-confirm Credit Card Number: </strong></label>
+			<input type="password" name="RPassword" required><br><br>
+			
+			<button type="submit" style="border: 2px solid black"><strong>Order Pizza</strong></button>
+			
+		</form>
+	</div>
+</body>
+</html>
