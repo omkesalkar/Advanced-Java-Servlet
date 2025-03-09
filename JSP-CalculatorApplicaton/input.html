@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+
+    <style>
+        /* Background Styling */
+        body {
+            font-family: "Arial", sans-serif;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Glassmorphism Effect */
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            color: white;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        label {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .btn-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        input[type="submit"] {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-transform: uppercase;
+        }
+
+        input[type="submit"]:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Calculator</h2>
+    <form action="choice.jsp" method="post">
+        
+        <label>Enter First Value</label>
+        <input type="number" name="V1" placeholder="Enter first value " required min=0>
+        
+        <label>Enter Second Value</label>
+        <input type="number" name="V2" placeholder="Enter second value " required min=0 >
+        
+        <div class="btn-container">
+            <input type="submit" name="operation" value="Addition">
+            <input type="submit" name="operation" value="Subtraction">
+            <input type="submit" name="operation" value="Multiplication">
+            <input type="submit" name="operation" value="Average">
+            <input type="submit" name="operation" value="Division">
+            <input type="submit" name="operation" value="Modulus">
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
